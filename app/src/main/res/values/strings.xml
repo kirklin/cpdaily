@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">cpdaily</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">USER_NAME</string>
+    <string name="shp_num">NUM</string>
+    <string name="shp_reason">REASON</string>
+    <string name="shp_name">SETTING</string>
+    <string name="logs">更新日志：\n
+        V1.1:修复vivo，华为手机显示问题\n
+        V1.2:支持修改审批时间\n
+        V1.3:向下兼容安卓5版本\n
+        V1.4:添加自动设置功能\n
+        V1.5:优化界面显示，更改配色为樱花粉\n
+        v1.52:增加自动保存功能\n
+        v1.6:增加返回功能\n
+
+        bug:1.晚上12点后打开软件自动配置会有蜜汁错误，只能手动修改。（不会真的有小可爱晚上12点还出门）\n
+            2.暂时不支持2K屏幕。
+        \n\n
+        注意：请将系统字体改为默认字体
+        \n\n
+        本软件仅供学习参考使用，出事本人概不负责
+        \n\n\n
+        觉得写的不错请喊一声大佬牛逼！！！！\n</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="name.lkk.cpdaily.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="name.lkk.cpdaily.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_leaveFragment2"
+            app:destination="@id/leaveFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="name.lkk.cpdaily.addFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaveFragment2"
+        android:name="name.lkk.cpdaily.LeaveFragment"
+        android:label="fragment_leave"
+        tools:layout="@layout/fragment_leave" >
+        <action
+            android:id="@+id/action_leaveFragment2_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>
