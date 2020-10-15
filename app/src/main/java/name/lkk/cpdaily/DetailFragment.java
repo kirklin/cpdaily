@@ -2,13 +2,10 @@ package name.lkk.cpdaily;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -76,29 +73,28 @@ public class DetailFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
        String name = getArguments().getString("name");
        //审批申请人
-        binding.textView56.setText(name+" - 发起申请");
+        binding.detailContent2Layout.textView56.setText(name+" - 发起申请");
        // 审批催办人
-        binding.textView57.setText(name+" - 发起催办");
+        binding.detailContent2Layout.textView57.setText(name+" - 发起催办");
         //开始时间
-        binding.textView51.setText(getArguments().getString("text2"));
+        binding.detailContent1Layout.textView51.setText(getArguments().getString("text2"));
 
         //结束时间
-        binding.textView52.setText(getArguments().getString("text3"));
+        binding.detailContent1Layout.textView52.setText(getArguments().getString("text3"));
 
         //紧急联系人
-        binding.textView53.setText(getArguments().getString("text4"));
+        binding.detailContent1Layout.textView53.setText(getArguments().getString("text4"));
 
         //请假原因
-        binding.textView54.setText(getArguments().getString("text5"));
+        binding.detailContent1Layout.textView54.setText(getArguments().getString("text5"));
 
         //审批流程
-        binding.textView55.setText(getArguments().getString("text6"));
+        binding.detailContent1Layout.textView55.setText(getArguments().getString("text6"));
 
+        binding.detailContent2Layout.textView20.setText(getArguments().getString("text7"));
 
-        binding.textView20.setText(getArguments().getString("text7"));
-
-        binding.textView21.setText(getArguments().getString("text8"));
-        binding.textView22.setText(getArguments().getString("text9"));
+        binding.detailContent2Layout.textView21.setText(getArguments().getString("text8"));
+        binding.detailContent2Layout.textView22.setText(getArguments().getString("text9"));
 
 
     }
