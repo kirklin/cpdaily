@@ -86,5 +86,17 @@ public class LeaveFragment extends Fragment {
                 navController.navigate(R.id.action_leaveFragment2_to_detailFragment,ConApp.bundle);
             }
         });
+        String startTime = ConApp.bundle.getString("text2");
+        String endTime = ConApp.bundle.getString("text3");
+        int startTimeH = Integer.parseInt(startTime.substring(6, 8));
+        int endTimeH = Integer.parseInt(endTime.substring(6, 8));
+        int startTimeM = Integer.parseInt(startTime.substring(9, 11));
+        int endTimeM = Integer.parseInt(endTime.substring(9, 11));
+        //请假时间
+        binding.textView9.setText(startTime+" ~ "+endTime+"（共"+ (endTimeH-startTimeH) +"小时"+(endTimeM-startTimeM)+"分钟）");
+                //实际请假时间
+        binding.textView10.setText(startTime+" ~ "+endTime+"（共"+ (endTimeH-startTimeH) +"小时"+(endTimeM-startTimeM)+"分钟）");
+                //右上角请假时间
+        binding.textView11.setText(startTime.substring(0,6));
     }
 }

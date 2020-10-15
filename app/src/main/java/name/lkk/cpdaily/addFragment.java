@@ -25,7 +25,7 @@ import name.lkk.cpdaily.databinding.FragmentAddBinding;
  * create an instance of this fragment.
  */
 public class addFragment extends Fragment {
-    static Bundle bundle;
+    static Bundle bundle= new Bundle();;
     MainViewModel mainViewModel;
     FragmentAddBinding binding;
     // TODO: Rename parameter arguments, choose names that match
@@ -137,7 +137,7 @@ public class addFragment extends Fragment {
         spTime3 = months + "-" + days + " " + hours + ":" + "49";
 
         if ((hour + 2) < 10) {
-            hours = "0" + Integer.toString(hour + 4);
+            hours = "0" + Integer.toString(hour + 2);
         } else if ((hour + 2) > 24) {
             hours = "0" + Integer.toString(Math.abs(hour - 24));
         } else {
@@ -165,7 +165,7 @@ public class addFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 mainViewModel.save(binding);
-                bundle = new Bundle();
+
                 //申请人
                 bundle.putString("name", String.valueOf(binding.editTextTextPersonName3.getText()).trim());
                 //开始时间
@@ -186,7 +186,6 @@ public class addFragment extends Fragment {
                 bundle.putString("text9", String.valueOf(binding.editTextDate3.getText()));
                 NavController navController = Navigation.findNavController(view);
                 ConApp.bundle = bundle;
-
                 navController.navigate(R.id.action_addFragment_to_detailFragment, bundle);
             }
         });
