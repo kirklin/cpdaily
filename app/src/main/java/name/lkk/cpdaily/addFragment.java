@@ -176,6 +176,8 @@ public class addFragment extends Fragment {
                 bundle.putString("text4", String.valueOf(binding.editTextTextPersonName4.getText()).trim());
                 //请假原因
                 bundle.putString("text5", String.valueOf(binding.editTextTextPersonName5.getText()).trim());
+                //申请位置
+                bundle.putString("text10", String.valueOf(binding.editTextTextPersonName6.getText()).trim());
                 //审批流程
                 bundle.putString("text6", String.valueOf(binding.editTextTextPersonName8.getText()));
                 //审批申请时间
@@ -184,6 +186,8 @@ public class addFragment extends Fragment {
                 bundle.putString("text8", String.valueOf(binding.editTextDate2.getText()));
                 //审批通过时间
                 bundle.putString("text9", String.valueOf(binding.editTextDate3.getText()));
+                //审批人
+                bundle.putString("text11", String.valueOf(binding.editTextTextPersonName7.getText()));
                 NavController navController = Navigation.findNavController(view);
                 ConApp.bundle = bundle;
                 navController.navigate(R.id.action_addFragment_to_detailFragment, bundle);

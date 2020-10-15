@@ -116,11 +116,18 @@
                 app:layout_constraintGuide_percent="0.14" />
 
             <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.145" />
+
+            <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.17" />
+                app:layout_constraintGuide_percent="0.19" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline37"
@@ -139,7 +146,7 @@
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:text="TextView"
                 android:textAlignment="viewStart"
                 android:textColor="@color/detail2color"
@@ -149,12 +156,12 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline37"
                 app:layout_constraintTop_toTopOf="@+id/guideline33"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="0.5" />
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:text="10-16"
                 android:textColor="#EA8500"
                 android:textSize="15sp"
@@ -162,8 +169,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline38"
-                app:layout_constraintTop_toTopOf="@+id/guideline35"
-                app:layout_constraintVertical_bias="0.44" />
+                app:layout_constraintTop_toTopOf="@+id/guideline43"
+                app:layout_constraintVertical_bias="0.13" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -189,6 +196,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.94" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
@@ -218,12 +232,6 @@
             app:layout_constraintTop_toTopOf="@+id/guideline4"
             app:layout_constraintVertical_bias="0.23000002" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.94" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

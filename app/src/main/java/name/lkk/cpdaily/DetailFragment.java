@@ -111,6 +111,8 @@ public class DetailFragment extends Fragment {
 
         //请假原因
         binding.detailContent1Layout.textView54.setText(getArguments().getString("text5"));
+        //申请位置
+        binding.detailContent1Layout.textView12.setText(getArguments().getString("text10"));
 
         //审批流程
         binding.detailContent1Layout.textView55.setText(getArguments().getString("text6"));
@@ -119,6 +121,7 @@ public class DetailFragment extends Fragment {
 
         binding.detailContent2Layout.textView21.setText(getArguments().getString("text8"));
         binding.detailContent2Layout.textView22.setText(getArguments().getString("text9"));
-
+        //审批人
+        binding.detailContent2Layout.textView13.setText(getArguments().getString("text11"));
     }
 }

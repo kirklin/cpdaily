@@ -6,6 +6,7 @@
     <string name="shp_num">NUM</string>
     <string name="shp_reason">REASON</string>
     <string name="shp_name">SETTING</string>
+    <string name="Fuck">私改源码后果自负</string>
     <string name="logs">更新日志：\n
         V1.1:修复vivo，华为手机显示问题\n
         V1.2:支持修改审批时间\n
