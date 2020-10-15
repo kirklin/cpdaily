@@ -13,6 +13,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.gson.Gson;
+
 import java.util.Calendar;
 
 import name.lkk.cpdaily.databinding.FragmentAddBinding;
@@ -23,6 +25,7 @@ import name.lkk.cpdaily.databinding.FragmentAddBinding;
  * create an instance of this fragment.
  */
 public class addFragment extends Fragment {
+    static Bundle bundle;
     MainViewModel mainViewModel;
     FragmentAddBinding binding;
     // TODO: Rename parameter arguments, choose names that match
@@ -78,7 +81,7 @@ public class addFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    public void onActivityCreated(@Nullable final Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         String days = "";
         String months = "";
@@ -162,7 +165,7 @@ public class addFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 mainViewModel.save(binding);
-                Bundle bundle = new Bundle();
+                bundle = new Bundle();
                 //申请人
                 bundle.putString("name", String.valueOf(binding.editTextTextPersonName3.getText()).trim());
                 //开始时间
@@ -181,8 +184,9 @@ public class addFragment extends Fragment {
                 bundle.putString("text8", String.valueOf(binding.editTextDate2.getText()));
                 //审批通过时间
                 bundle.putString("text9", String.valueOf(binding.editTextDate3.getText()));
-
                 NavController navController = Navigation.findNavController(view);
+                ConApp.bundle = bundle;
+
                 navController.navigate(R.id.action_addFragment_to_detailFragment, bundle);
             }
         });

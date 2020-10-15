@@ -6,4 +6,6 @@
     <color name="detailcolor">#161A28</color>
     <color name="detail2color">#878787</color>
     <color name="toolbarcolor">#FFFFFF</color>
+    <color name="leavecolor">#F2F4F6</color>
+    <color name="button">#3669ED</color>
 </resources>

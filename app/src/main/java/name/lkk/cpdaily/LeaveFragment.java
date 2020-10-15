@@ -6,10 +6,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateViewModelFactory;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 
 import name.lkk.cpdaily.databinding.FragmentLeaveBinding;
 
@@ -74,8 +77,14 @@ public class LeaveFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    public void onActivityCreated(@Nullable final Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        binding.imageView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavController navController = Navigation.findNavController(view);
+                navController.navigate(R.id.action_leaveFragment2_to_detailFragment,ConApp.bundle);
+            }
+        });
     }
 }

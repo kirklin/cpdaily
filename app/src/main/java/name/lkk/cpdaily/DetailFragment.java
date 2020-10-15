@@ -82,7 +82,7 @@ public class DetailFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    public void onActivityCreated(@Nullable final Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         ((AppCompatActivity) getActivity()).setSupportActionBar(binding.toolbar1);
         //设置APPBar
@@ -95,7 +95,6 @@ public class DetailFragment extends Fragment {
                 navController.navigate(R.id.action_detailFragment_to_leaveFragment2);
             }
         });
-        
        String name = getArguments().getString("name");
        //审批申请人
         binding.detailContent2Layout.textView56.setText(name+" - 发起申请");
@@ -120,7 +119,6 @@ public class DetailFragment extends Fragment {
 
         binding.detailContent2Layout.textView21.setText(getArguments().getString("text8"));
         binding.detailContent2Layout.textView22.setText(getArguments().getString("text9"));
-
 
     }
 }
