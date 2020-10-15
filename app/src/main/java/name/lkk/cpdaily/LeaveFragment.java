@@ -93,9 +93,10 @@ public class LeaveFragment extends Fragment {
         int startTimeM = Integer.parseInt(startTime.substring(9, 11));
         int endTimeM = Integer.parseInt(endTime.substring(9, 11));
         //请假时间
-        binding.textView9.setText(startTime+" ~ "+endTime+"（共"+ (endTimeH-startTimeH) +"小时"+(endTimeM-startTimeM)+"分钟）");
+        String text = startTime + " ~ " + endTime + "（共" + (endTimeH - startTimeH) + "小时" + (endTimeM - startTimeM) + "分钟）";
+        binding.textView9.setText(text);
                 //实际请假时间
-        binding.textView10.setText(startTime+" ~ "+endTime+"（共"+ (endTimeH-startTimeH) +"小时"+(endTimeM-startTimeM)+"分钟）");
+        binding.textView10.setText(text);
                 //右上角请假时间
         binding.textView11.setText(startTime.substring(0,6));
     }

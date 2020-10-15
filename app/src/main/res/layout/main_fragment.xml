@@ -20,7 +20,7 @@
         android:layout_height="0dp"
         android:backgroundTint="#FEDFE1"
         android:text="点我！点我！！"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

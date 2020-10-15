@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
-            android:label="请假详情">
+            android:label="我要请假">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
