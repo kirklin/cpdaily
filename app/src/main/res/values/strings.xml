@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">cpdaily</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="user_name">USER_NAME</string>
     <string name="shp_num">NUM</string>
@@ -15,7 +14,8 @@
         V1.5:优化界面显示，更改配色为樱花粉\n
         v1.52:增加自动保存功能\n
         v1.6:增加返回功能\n
-
+        v1.62:增加小橘子图标\n
+        v1.7:增加沉浸式状态栏\n
         bug:1.晚上12点后打开软件自动配置会有蜜汁错误，只能手动修改。（不会真的有小可爱晚上12点还出门）\n
             2.暂时不支持2K屏幕。
         \n\n
