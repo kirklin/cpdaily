@@ -136,7 +136,7 @@
                 android:text="TextView"
                 android:textAlignment="viewStart"
                 android:textColor="@color/detail2color"
-                android:textSize="30px"
+                android:textSize="35px"
                 app:layout_constraintBottom_toTopOf="@+id/guideline33"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -149,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:text="10-16"
                 android:textColor="#EA8500"
-                android:textSize="30px"
+                android:textSize="35px"
                 app:layout_constraintBottom_toTopOf="@+id/guideline43"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -223,7 +223,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.046296295" />
+                app:layout_constraintGuide_percent="0.05" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView

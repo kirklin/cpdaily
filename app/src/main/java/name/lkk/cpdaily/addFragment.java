@@ -149,7 +149,10 @@ public class addFragment extends Fragment {
         binding.editTextTextPersonName4.setText(String.valueOf(mainViewModel.getNum()));
         //自动设置请假原因
         binding.editTextTextPersonName5.setText(String.valueOf(mainViewModel.getReason()));
-
+        //自动设置请假位置
+        binding.editTextTextPersonName6.setText(String.valueOf(mainViewModel.getLocal()));
+        //自动设置辅导员
+        binding.editTextTextPersonName7.setText(String.valueOf(mainViewModel.getFdy()));
         //自动设置开始时间
         binding.editTextTextPersonName.setText(defTime);
         //自动设置结束时间
