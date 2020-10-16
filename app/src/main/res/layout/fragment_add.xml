@@ -398,6 +398,7 @@
         android:layout_width="wrap_content"
         android:layout_height="19dp"
         android:text="审批人"
+        android:textSize="@dimen/card1font"
         app:layout_constraintBottom_toTopOf="@+id/guideline42"
         app:layout_constraintEnd_toStartOf="@+id/guideline12"
         app:layout_constraintHorizontal_bias="0.03"

@@ -127,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.19" />
+                app:layout_constraintGuide_percent="0.17" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline37"
@@ -150,13 +150,13 @@
                 android:text="TextView"
                 android:textAlignment="viewStart"
                 android:textColor="@color/detail2color"
-                android:textSize="15sp"
+                android:textSize="30px"
                 app:layout_constraintBottom_toTopOf="@+id/guideline35"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline37"
                 app:layout_constraintTop_toTopOf="@+id/guideline33"
-                app:layout_constraintVertical_bias="0.5" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -164,20 +164,21 @@
                 android:layout_height="wrap_content"
                 android:text="10-16"
                 android:textColor="#EA8500"
-                android:textSize="15sp"
+                android:textSize="30px"
                 app:layout_constraintBottom_toTopOf="@+id/guideline36"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline38"
                 app:layout_constraintTop_toTopOf="@+id/guideline43"
-                app:layout_constraintVertical_bias="0.13" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="10-10"
                 android:textColor="#C1C4C9"
+                android:textSize="35px"
                 app:layout_constraintBottom_toTopOf="@+id/guideline33"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline39"
