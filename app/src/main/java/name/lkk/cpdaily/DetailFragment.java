@@ -9,11 +9,17 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.os.Handler;
+import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import name.lkk.cpdaily.databinding.FragmentDetailBinding;
 
@@ -95,6 +101,10 @@ public class DetailFragment extends Fragment {
                 navController.navigate(R.id.action_detailFragment_to_leaveFragment2);
             }
         });
+        //动态时间
+        new TimeThread().start();//启动线程
+
+
        String name = getArguments().getString("name");
        //审批申请人
         binding.detailContent2Layout.textView56.setText(name+" - 发起申请");
@@ -124,4 +134,36 @@ public class DetailFragment extends Fragment {
         //审批人
         binding.detailContent2Layout.textView13.setText(getArguments().getString("text11"));
     }
+
+    //写一个新的线程每隔一秒发送一次消息,这样做会和系统时间相差1秒
+    public class TimeThread extends Thread{
+        @Override
+        public void run() {
+            super.run();
+            do{
+                try {
+                    Thread.sleep(1000);
+                    Message msg = new Message();
+                    msg.what = 1;
+                    handler.sendMessage(msg);
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }while (true);
+
+        }
+    }
+    private Handler handler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+            switch (msg.what){
+                case 1:
+                    binding.time.setText("当前时间:"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(System.currentTimeMillis())));
+                    break;
+            }
+            return false;
+        }
+    });
+
 }
