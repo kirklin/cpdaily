@@ -6,6 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.SavedStateViewModelFactory;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
@@ -29,6 +31,7 @@ import name.lkk.cpdaily.databinding.FragmentDetailBinding;
  * create an instance of this fragment.
  */
 public class DetailFragment extends Fragment {
+    MainViewModel mainViewModel;
     private FragmentDetailBinding binding;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -70,6 +73,8 @@ public class DetailFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        mainViewModel = new ViewModelProvider(this, new SavedStateViewModelFactory(getActivity().getApplication(), this))
+                .get(MainViewModel.class);
     }
 
     @Override

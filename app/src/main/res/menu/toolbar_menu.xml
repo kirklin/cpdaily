@@ -6,4 +6,7 @@
 <!--    <item-->
 <!--        android:title="反馈"-->
 <!--        app:showAsAction="always" />-->
+    <item
+        android:title="反馈"
+        app:showAsAction="always" />
 </menu>

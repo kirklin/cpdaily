@@ -5,6 +5,8 @@
         <item name="colorPrimary">@color/toolbarcolor</item>
         <item name="colorPrimaryDark">#E4E3E6</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/text_color</item>
+
     </style>
 
 </resources>

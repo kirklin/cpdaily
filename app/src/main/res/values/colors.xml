@@ -8,4 +8,5 @@
     <color name="toolbarcolor">#FFFFFF</color>
     <color name="leavecolor">#F2F4F6</color>
     <color name="button">#3669ED</color>
+    <color name="text_color">#3669ED</color>
 </resources>
