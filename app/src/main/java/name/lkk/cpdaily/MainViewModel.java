@@ -51,7 +51,7 @@ public class MainViewModel extends AndroidViewModel {
         SharedPreferences shp = getApplication().getSharedPreferences(shpName, Context.MODE_PRIVATE);
         String name = shp.getString(key, "你的名字");
         String num = shp.getString(key2, "");
-        String reason = shp.getString(key3, "原因：\n目的地：\n出行方式：\n");
+        String reason = shp.getString(key3, "原因：\n");
         String local = shp.getString(key4, "中国");
         String fdy = shp.getString(key5, "一级：[辅导员]XXX - 审批");
 
